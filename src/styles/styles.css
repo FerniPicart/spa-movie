@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+  background: linear-gradient(180deg, rgba(189,75,75,1) 48%, rgba(201, 113, 113, 1) 98%);
+}
+
+.header-main {
+  display: flex;
+  background: #222525;
+}
+
+.header-main a {
+  font-family: 'Permanent Marker', cursive;
+  font-size:38px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  -webkit-text-stroke: 1px #000;
+}
+
+.movies {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: minmax(auto, 1300px);
+  padding: 10px;
+}
+
+.section-title {
+  font-size: 35px;
+  font-weight:inherit;
+  font-family: 'Patrick Hand', cursive;
+  margin-top: 4px;
+  color: #fff;
+  -webkit-text-stroke: 1px #000;
+}
+
+.section-movie {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1.5rem;
+  grid-row-gap: 1.5em;
+}
+
+.movie-item {
+  display: flex;
+  height: 275px;
+  background: #222525;
+  margin: 0 0 20px 0;
+  border-radius: 10px;
+  border: 5px solid #aaa;
+}
+
+.movie-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.movie-item:hover {
+  transition: all 500ms;
+  transform: scale(1.05);
+}
+
+.movie-item h3 {
+  display: flex;
+  font-size: 19px;
+  font-weight:normal;
+  padding: 0 10px;
+  justify-content: space-between;
+  font-family: 'Bitter', serif;
+  color: #fff;
+  text-decoration:underline;
+}
+
+.movie-item p {
+  display: flex;
+  font-size: 14px;
+  padding-left: 10px;
+  align-items: end;
+  color: rgb(255, 255, 255);
+  font-family: 'Bitter', serif;
+}
+
+.movie-item a {
+  text-decoration: none;
+}
+
+.movie-card {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 20px 0 20px;
+}
+
+.poster-img {
+  height: auto;
+  overflow: hidden;
+}
+
+.movie-img {
+  animation-name: fade;
+  animation-duration: 2s;
+  margin-right: 10px;
+  height: 750px;
+  border-radius: 5px;
+  box-shadow: 6px 6px 30px 17px rgba(0, 0, 0, 0.43);
+}
+
+.movie-info {
+  background-color:#222525;
+  padding: 10px 20px;
+  margin-left: 10px;
+  height: auto;
+  animation-name: fade;
+  animation-duration: 2s;
+  box-shadow: 6px 6px 30px 17px rgba(0, 0, 0, 0.43);
+  border-radius: 5px;
+}
+
+.movie-info h2 {
+  display: flex;
+  font-size: 30px;
+  font-weight: bold;
+  justify-content: center;
+  color: #fff;
+}
+
+.movie-info h3 {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 30px;
+  color: #eee;
+}
+
+.movie-info p {
+  display: inline-block;
+  font-size: 14px;
+  padding: 0 20px;
+  color: #ccc;
+}
+
+.footer {
+  background: linear-gradient(180deg, rgba(189,75,75,1) 48%, rgba(201, 113, 113, 1) 98%);
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  bottom: 0px;
+  padding: 30px;
+}
